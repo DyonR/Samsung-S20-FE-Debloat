@@ -55,6 +55,19 @@ rm -rf /system_root/system/priv-app/FBServices
 rm -rf /system_root/system/etc/permissions/privapp-permissions-facebook.xml
 rm -rf /system_root/system/etc/sysconfig/facebook-hiddenapi-package-whitelist.xml
 
+# Google Chrome
+find /data/app/ -iname *com.android.chrome* 2>/dev/null | xargs rm -rf
+find /data/system/graphicsstats/ -iname *com.android.chrome* 2>/dev/null | xargs rm -rf
+rm -rf /data/data/com.android.chrome
+rm -rf /data/media/0/Android/data/com.android.chrome
+rm -rf /data/misc/profiles/cur/0/com.android.chrome
+rm -rf /data/misc/profiles/ref/com.android.chrome
+rm -rf /data/system_ce/0/launch_params/com.android.chrome_org.chromium.chrome.browser.ChromeTabbedActivity.xml
+rm -rf /data/system_ce/0/shortcut_service/packages/com.android.chrome.xml
+rm -rf /data/user_de/0/com.android.chrome
+rm -rf /product/app/Chrome
+rm -rf /sdcard/Android/data/com.android.chrome
+
 # Google Duo
 find /data/app/ -iname *com.google.android.apps.tachyon* 2>/dev/null | xargs rm -rf
 find /data/system/package_cache/ -iname *DuoStub* 2>/dev/null | xargs rm -rf
