@@ -21,6 +21,23 @@ TWRP
 ### Manual
 1. To make it easy, mount all partitions in TWRP from the `Mount` menu, except `Micro SD card` and `USB OTG`, but if you want to make it minimal `Data`, `Prism`, `Product`, `System` and `Cache` should be enough, but I have not tested this minimal setup.  
 2. Via `adb`, just paste the script.  
+
+## Note about fixing permissions (Google Chome for example)
+If you uninstall Chrome with this script, and want to install it via the Google Play store again, there are a few steps that you need to take, or you will get an error from the Google Play store. When trying to install it via for example `adb install` or check `logcat`, you will see the message `INSTALL_FAILED_DUPLICATE_PERMISSION`.  
+  
+To fix this, do the following:  
+Boot to TWRP, mount everything again, if you wish to keep it minimalstic, `/data` would probably be enough.  
+Via `adb shell` run `mount -o rw,remount /data` to make sure it's mounted as rw, since the TWRP I use seem to have some issues with it.
+Pull the following file from your phone:
+`adb pull /data/system/packages.xml`  
+  
+Open this file with a program like Notepad++  
+Look for all lines with the package name, for example `package="com.android.chrome"`, and delete those lines.  
+  
+After that, push the file back to your phone like this for example:
+`adb push packages.xml /data/system/packages.xml`  
+  
+Reboot phone and reinstall the app from the Play Store or other source.  
   
 ## Alternative / Additional
 [XDA Developers member jojos38](https://forum.xda-developers.com/m/jojos38.7235471/) made a list with apps that could be disabled using `pm uninstall -k --user 0 com.package.name`. But I wanted to take it a step further and completely delete the apps from my phone.  

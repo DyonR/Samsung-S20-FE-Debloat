@@ -58,6 +58,8 @@ rm -rf /system_root/system/etc/sysconfig/facebook-hiddenapi-package-whitelist.xm
 # Google Chrome
 find /data/app/ -iname *com.android.chrome* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.android.chrome* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *Chrome-* 2>/dev/null | xargs rm -rf
+find /data/dalvik-cache/ -iname *@app@Chrome@* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.android.chrome
 rm -rf /data/media/0/Android/data/com.android.chrome
 rm -rf /data/misc/profiles/cur/0/com.android.chrome
