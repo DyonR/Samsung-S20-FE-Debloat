@@ -15,12 +15,12 @@ TWRP
 ### .sh file  
 1. To make it easy, mount all partitions in TWRP from the `Mount` menu, except `Micro SD card` and `USB OTG`, but if you want to make it minimal `Data`, `Prism`, `Product`, `System` and `Cache` should be enough, but I have not tested this minimal setup.  
 2. Copy the file `debloat-s20-fe-5g.sh` to your phone.  
-3. Via `adb` or the TWRP Terminal, make the script executable with `chmod +x debloat-s20-fe-5g.sh`.  
+3. Via `adb shell` or the TWRP Terminal, make the script executable with `chmod +x debloat-s20-fe-5g.sh`.  
 4. After that just run it  
   
 ### Manual
 1. To make it easy, mount all partitions in TWRP from the `Mount` menu, except `Micro SD card` and `USB OTG`, but if you want to make it minimal `Data`, `Prism`, `Product`, `System` and `Cache` should be enough, but I have not tested this minimal setup.  
-2. Via `adb`, just paste the script.  
+2. Via `adb shell`, just paste the script.  
 
 ## Note about fixing permissions (Google Chome for example)
 If you uninstall Chrome with this script, and want to install it via the Google Play store again, there are a few steps that you need to take, or you will get an error from the Google Play store. When trying to install it via for example `adb install` or check `logcat`, you will see the message `INSTALL_FAILED_DUPLICATE_PERMISSION`.  
