@@ -39,6 +39,17 @@ After that, push the file back to your phone like this for example:
   
 Reboot phone and reinstall the app from the Play Store or other source.  
   
+As an example, this is the list of lines that I removed:  
+```
+<item name="com.android.chrome.permission.TRANSLATE" package="com.android.chrome" protection="2" />
+<item name="com.android.chrome.permission.CHILD_SERVICE" package="com.android.chrome" protection="2" />
+<item name="com.android.chrome.TOS_ACKED" package="com.android.chrome" protection="18" />
+<item name="com.android.chrome.permission.C2D_MESSAGE" package="com.android.chrome" protection="2" />
+<item name="com.android.chrome.permission.READ_WRITE_BOOKMARK_FOLDERS" package="com.android.chrome" protection="18" />
+<item name="com.android.chrome.permission.DEBUG" package="com.android.chrome" protection="2" />
+<item name="com.android.chrome.permission.SHOW_COMPLIANCE_SCREEN" package="com.android.chrome" protection="18" />
+```
+  
 ## Alternative / Additional
 [XDA Developers member jojos38](https://forum.xda-developers.com/m/jojos38.7235471/) made a list with apps that could be disabled using `pm uninstall -k --user 0 com.package.name`. But I wanted to take it a step further and completely delete the apps from my phone.  
 This thread can be found here: [https://forum.xda-developers.com/t/debloat-adb-ultimate-adb-debloat-list.4109483/](https://forum.xda-developers.com/t/debloat-adb-ultimate-adb-debloat-list.4109483/)  
