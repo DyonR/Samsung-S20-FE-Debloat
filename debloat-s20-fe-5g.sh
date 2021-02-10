@@ -112,7 +112,7 @@ rm -rf /sdcard/Android/data/com.android.chrome
 find /data/app/ -iname *com.google.android.apps.tachyon-* 2>/dev/null | xargs rm -rf
 find /data/dalvik-cache/ -iname *@DuoStub@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.google.android.apps.tachyon* 2>/dev/null | xargs rm -rf
-find /data/system/package_cache/ -iname *DuoStub* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *DuoStub-* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.google.android.apps.tachyon
 rm -rf /data/misc/profiles/cur/0/com.google.android.apps.tachyon
 rm -rf /data/misc/profiles/ref/com.google.android.apps.tachyon
@@ -126,7 +126,7 @@ rm -rf /product/etc/sysconfig/google_duo.xml
 find /data/app/ -iname *com.google.android.apps.maps-* 2>/dev/null | xargs rm -rf
 find /data/dalvik-cache/ -iname *@Maps@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.google.android.apps.maps* 2>/dev/null | xargs rm -rf
-find /data/system/package_cache/ -iname *Maps* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *Maps-* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.google.android.apps.maps
 rm -rf /data/media/0/Android/data/com.google.android.apps.maps
 rm -rf /data/misc/profiles/ref/com.google.android.apps.maps
@@ -141,7 +141,7 @@ rm -rf /sdcard/Android/data/com.google.android.apps.maps
 find /data/app/ -iname *com.google.android.apps.maps-* 2>/dev/null | xargs rm -rf
 find /data/dalvik-cache/ -iname *@ARCore@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.google.android.apps.maps* 2>/dev/null | xargs rm -rf
-find /data/system/package_cache/ -iname *ARCore* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *ARCore-* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.google.ar.core
 rm -rf /data/misc/profiles/cur/0/com.google.ar.core
 rm -rf /data/misc/profiles/ref/com.google.ar.core
@@ -154,12 +154,27 @@ rm -rf /system_root/system/app/ARCore
 find /data/app/ -iname *com.google.android.tts-* 2>/dev/null | xargs rm -rf
 find /data/dalvik-cache/ -iname *@GoogleTTS@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.google.android.tts* 2>/dev/null | xargs rm -rf
-find /data/system/package_cache/ -iname *GoogleTTS* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *GoogleTTS-* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.google.android.tts
 rm -rf /data/misc/profiles/cur/0/com.google.android.tts
 rm -rf /data/misc/profiles/ref/com.google.android.tts
 rm -rf /data/user_de/0/com.google.android.tts
 rm -rf /product/app/GoogleTTS
+
+# Link to Windows Service
+# Package Id: com.samsung.android.mdx
+# App Name: LinkToWindowsService
+find /data/app/ -iname *com.samsung.android.mdx-* 2>/dev/null | xargs rm -rf
+find /data/dalvik-cache/ -iname *@LinkToWindowsService@* 2>/dev/null | xargs rm -rf
+find /data/system/graphicsstats/ -iname *com.samsung.android.mdx* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *LinkToWindowsService-* 2>/dev/null | xargs rm -rf
+rm -rf /data/data/com.samsung.android.mdx
+rm -rf /data/media/0/Android/data/com.samsung.android.mdx
+rm -rf /data/misc/profiles/cur/0/com.samsung.android.mdx
+rm -rf /data/misc/profiles/ref/com.samsung.android.mdx
+rm -rf /data/user_de/0/com.samsung.android.mdx
+rm -rf /sdcard/Android/data/com.samsung.android.mdx
+rm -rf /system_root/system/priv-app/LinkToWindowsService*
 
 # Live Transcribe & Sound Notifications
 # Package Id: com.google.audio.hearing.visualization.accessibility.scribe
@@ -167,7 +182,7 @@ rm -rf /product/app/GoogleTTS
 find /data/app/ -iname *com.google.audio.hearing.visualization.accessibility.scribe-* 2>/dev/null | xargs rm -rf
 find /data/dalvik-cache/ -iname *@LiveTranscribe@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.google.audio.hearing.visualization.accessibility.scribe* 2>/dev/null | xargs rm -rf
-find /data/system/package_cache/ -iname *LiveTranscribe* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *LiveTranscribe-* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.google.audio.hearing.visualization.accessibility.scribe
 rm -rf /data/misc/profiles/cur/0/com.google.audio.hearing.visualization.accessibility.scribe
 rm -rf /data/misc/profiles/ref/com.google.audio.hearing.visualization.accessibility.scribe
@@ -180,7 +195,7 @@ rm -rf /system_root/system/app/LiveTranscribe
 find /data/app/ -iname *com.microsoft.skydrive-* 2>/dev/null | xargs rm -rf
 find /data/dalvik-cache/ -iname *@OneDrive_Samsung@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.microsoft.skydrive* 2>/dev/null | xargs rm -rf
-find /data/system/package_cache/ -iname *OneDrive_Samsung* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *OneDrive_Samsung-* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.microsoft.skydrive
 rm -rf /data/media/0/Android/data/com.microsoft.skydrive
 rm -rf /data/misc/profiles/cur/0/com.microsoft.skydrive
@@ -195,7 +210,7 @@ rm -rf /system_root/system/priv-app/OneDrive_Samsung*
 find /data/app/ -iname *com.microsoft.appmanager-* 2>/dev/null | xargs rm -rf
 find /data/dalvik-cache/ -iname *@YourPhone_P1_5@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.microsoft.appmanager* 2>/dev/null | xargs rm -rf
-find /data/system/package_cache/ -iname *YourPhone_P1_5* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *YourPhone_P1_5-* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.microsoft.appmanager
 rm -rf /data/media/0/Android/data/com.microsoft.appmanager
 rm -rf /data/misc/profiles/cur/0/com.microsoft.appmanager
@@ -211,7 +226,7 @@ rm -rf /system_root/system/priv-app/YourPhone*
 find /data/app/ -iname *com.netflix.mediaclient-* 2>/dev/null | xargs rm -rf
 find /data/dalvik-cache/ -iname *@Netflix_stub@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.netflix.mediaclient* 2>/dev/null | xargs rm -rf
-find /data/system/package_cache/ -iname *Netflix_stub* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *Netflix_stub-* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.netflix.mediaclient
 rm -rf /data/misc/profiles/cur/0/com.netflix.mediaclient
 rm -rf /data/misc/profiles/ref/com.netflix.mediaclient
@@ -224,7 +239,7 @@ rm -rf /system_root/system/app/Netflix_stub
 find /data/app/ -iname *com.netflix.partner.activation-* 2>/dev/null | xargs rm -rf
 find /data/dalvik-cache/ -iname *@Netflix_activationCommon@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.netflix.partner.activation* 2>/dev/null | xargs rm -rf
-find /data/system/package_cache/ -iname *Netflix_activationCommon* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *Netflix_activationCommon-* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.netflix.partner.activation
 rm -rf /data/misc/profiles/cur/0/com.netflix.partner.activation
 rm -rf /data/misc/profiles/ref/com.netflix.partner.activation
@@ -240,7 +255,7 @@ rm -rf /system_root/system/etc/netflixchid.conf
 find /data/app/ -iname *com.hiya.star-* 2>/dev/null | xargs rm -rf
 find /data/dalvik-cache/ -iname *@HiyaService@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.hiya.star* 2>/dev/null | xargs rm -rf
-find /data/system/package_cache/ -iname *HiyaService* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *HiyaService-* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.hiya.star
 rm -rf /data/data/com.hiya.star/shared_prefs/com.hiya.star_preferences.xml
 rm -rf /data/misc/profiles/cur/0/com.hiya.star
@@ -254,7 +269,7 @@ rm -rf /system_root/system/app/HiyaService
 find /data/app/ -iname *com.samsung.android.ardrawing-* 2>/dev/null | xargs rm -rf
 find /data/dalvik-cache/ -iname *@ARDrawing@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.samsung.android.ardrawing* 2>/dev/null | xargs rm -rf
-find /data/system/package_cache/ -iname *ARDrawing* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *ARDrawing-* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.samsung.android.ardrawing
 rm -rf /data/misc/profiles/cur/0/com.samsung.android.ardrawing
 rm -rf /data/misc/profiles/ref/com.samsung.android.ardrawing
@@ -267,7 +282,7 @@ rm -rf /system_root/system/app/ARDrawing
 find /data/app/ -iname *com.samsung.android.aremoji-* 2>/dev/null | xargs rm -rf
 find /data/dalvik-cache/ -iname *@AREmoji@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.samsung.android.aremoji* 2>/dev/null | xargs rm -rf
-find /data/system/package_cache/ -iname *AREmoji* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *AREmoji-* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.samsung.android.aremoji
 rm -rf /data/misc/profiles/cur/0/com.samsung.android.aremoji
 rm -rf /data/misc/profiles/ref/com.samsung.android.aremoji
@@ -283,7 +298,7 @@ rm -rf /system_root/system/priv-app/AREmoji
 find /data/app/ -iname *com.samsung.android.aremojieditor-* 2>/dev/null | xargs rm -rf
 find /data/dalvik-cache/ -iname *@AREmojiEditor@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.samsung.android.aremojieditor* 2>/dev/null | xargs rm -rf
-find /data/system/package_cache/ -iname *AREmojiEditor* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *AREmojiEditor-* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.samsung.android.aremojieditor
 rm -rf /data/media/0/Android/data/com.samsung.android.aremojieditor
 rm -rf /data/misc/profiles/cur/0/com.samsung.android.aremojieditor
@@ -298,7 +313,7 @@ rm -rf /system_root/system/priv-app/AREmojiEditor
 find /data/app/ -iname *com.samsung.android.arzone-* 2>/dev/null | xargs rm -rf
 find /data/dalvik-cache/ -iname *@ARZone@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.samsung.android.arzone* 2>/dev/null | xargs rm -rf
-find /data/system/package_cache/ -iname *ARZone* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *ARZone-* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.samsung.android.arzone
 rm -rf /data/misc/profiles/cur/0/com.samsung.android.arzone
 rm -rf /data/misc/profiles/ref/com.samsung.android.arzone
@@ -394,6 +409,20 @@ rm -rf /data/misc/profiles/cur/0/com.samsung.android.app.camera.sticker.facearav
 rm -rf /data/misc/profiles/ref/com.samsung.android.app.camera.sticker.facearavatar.preload
 rm -rf /data/user_de/0/com.samsung.android.app.camera.sticker.facearavatar.preload
 rm -rf /system_root/system/priv-app/StickerFaceARAvatar
+
+# Samsung Galaxy Friends
+# Package Id: com.samsung.android.mateagent
+# App Name: MateAgent
+find /data/app/ -iname *com.samsung.android.mateagent-* 2>/dev/null | xargs rm -rf
+find /data/dalvik-cache/ -iname *@MateAgent@* 2>/dev/null | xargs rm -rf
+find /data/system/graphicsstats/ -iname *com.samsung.android.mateagent 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *MateAgent-* 2>/dev/null | xargs rm -rf
+rm -rf /data/data/com.samsung.android.mateagent
+rm -rf /data/misc/profiles/cur/0/com.samsung.android.mateagent
+rm -rf /data/misc/profiles/ref/com.samsung.android.mateagent
+rm -rf /system_root/system/etc/permissions/privapp-permissions-com.samsung.android.mateagent.xml
+rm -rf /data/user_de/0/com.samsung.android.mateagent
+rm -rf /system_root/system/priv-app/MateAgent
 
 # Samsung Honeyboard Keyoard (REQUIRED FOR DEX)
 # Package Id: com.samsung.android.app.camera.sticker.facearavatar.preload
@@ -502,6 +531,19 @@ rm -rf /data/user_de/0/com.samsung.android.app.tips
 rm -rf /system_root/system/etc/permissions/privapp-permissions-com.samsung.android.app.tips.xml
 rm -rf /system_root/system/priv-app/Tips
 
+# Samsung TTS
+# Package Id: com.samsung.SMT
+# App Name: SamsungTTS
+find /data/app/ -iname *com.samsung.SMT-* 2>/dev/null | xargs rm -rf
+find /data/dalvik-cache/ -iname *@SamsungTTS@* 2>/dev/null | xargs rm -rf
+find /data/system/graphicsstats/ -iname *com.samsung.SMT 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *SamsungTTS-* 2>/dev/null | xargs rm -rf
+rm -rf /data/data/com.samsung.SMT
+rm -rf /data/misc/profiles/cur/0/com.samsung.SMT
+rm -rf /data/misc/profiles/ref/com.samsung.SMT
+rm -rf /data/user_de/0/com.samsung.SMT
+rm -rf /system_root/system/app/SamsungTTS
+
 # Samsung Vision AR Apps
 # Package Id: com.samsung.android.app.tips
 # App Name: VisionARApps
@@ -592,6 +634,20 @@ rm -rf /data/misc/profiles/ref/de.axelspringer.yana.zeropage
 rm -rf /data/user_de/0/de.axelspringer.yana.zeropage
 rm -rf /system_root/system/etc/permissions/privapp-permissions-de.axelspringer.yana.zeropage.xml
 rm -rf /system_root/system/priv-app/Upday
+
+# What's New
+# Package Id: com.samsung.android.app.social
+# App Name: SamsungSocial
+find /data/app/ -iname *com.samsung.android.app.social-* 2>/dev/null | xargs rm -rf
+find /data/dalvik-cache/ -iname *@SamsungSocial@* 2>/dev/null | xargs rm -rf
+find /data/system/graphicsstats/ -iname *com.samsung.android.app.social 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *SamsungSocial-* 2>/dev/null | xargs rm -rf
+rm -rf /data/data/com.samsung.android.app.social
+rm -rf /data/misc/profiles/cur/0/com.samsung.android.app.social
+rm -rf /data/misc/profiles/ref/com.samsung.android.app.social
+rm -rf /data/user_de/0/com.samsung.android.app.social
+rm -rf /system_root/system/etc/permissions/privapp-permissions-com.samsung.android.samsungsocial.xml
+rm -rf /system_root/system/priv-app/SamsungSocial
 
 # No idea what these all are, but seem unnecessary
 rm -rf /prism/app/MDIP-TIMO-2uk-DTDE-DTAT-VFAU-optus-3IT
