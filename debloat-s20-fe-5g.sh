@@ -501,6 +501,22 @@ rm -rf /system_root/system/etc/permissions/privapp-permissions-com.sec.android.m
 rm -rf /system_root/system/priv-app/AvatarEmojiSticker_Canvas
 rm -rf /system_root/system/priv-app/AvatarEmojiSticker_R
 
+# Samsung Push Services
+# Package Id: com.sec.spp.push
+# App Name: SPPPushClient
+find /data/app/ -iname *com.sec.spp.push-* 2>/dev/null | xargs rm -rf
+find /data/dalvik-cache/ -iname *@SPPPushClient@* 2>/dev/null | xargs rm -rf
+find /data/system/graphicsstats/ -iname *com.sec.spp.push 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *SPPPushClient-* 2>/dev/null | xargs rm -rf
+rm -rf /data/data/com.sec.spp.push
+rm -rf /data/misc/profiles/cur/0/com.sec.spp.push
+rm -rf /data/misc/profiles/ref/com.sec.spp.push
+rm -rf /data/system/dropbox/com.sec.spp.push*
+rm -rf /data/system_ce/0/shortcut_service/packages/com.sec.spp.push.xml
+rm -rf /data/user_de/0/com.sec.spp.push
+rm -rf /system_root/system/priv-app/SPPPushClient
+rm /system_root/system/etc/permissions/privapp-permissions-com.sec.spp.push.xml
+
 # Samsung Reminder
 # Package Id: com.samsung.android.messaging
 # App Name: SmartReminder
@@ -515,6 +531,22 @@ rm -rf /data/system/dropbox/com.samsung.android.app.reminder*
 rm -rf /data/system_ce/0/shortcut_service/packages/com.samsung.android.app.reminder.xml
 rm -rf /data/user_de/0/com.samsung.android.app.reminder
 rm -rf /system_root/system/app/SmartReminder
+
+# Samsung Secure Wi-Fi
+# Package Id: com.samsung.android.fast
+# App Name: Fast
+find /data/app/ -iname *com.samsung.android.fast-* 2>/dev/null | xargs rm -rf
+find /data/dalvik-cache/ -iname *@Fast@* 2>/dev/null | xargs rm -rf
+find /data/system/graphicsstats/ -iname *com.samsung.android.fast 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *Fast-* 2>/dev/null | xargs rm -rf
+rm -rf /data/data/com.samsung.android.fast
+rm -rf /data/misc/profiles/cur/0/com.samsung.android.fast
+rm -rf /data/misc/profiles/ref/com.samsung.android.fast
+rm -rf /data/system/dropbox/com.samsung.android.fast*
+rm -rf /data/system_ce/0/shortcut_service/packages/com.samsung.android.fast.xml
+rm -rf /data/user_de/0/com.samsung.android.fast
+rm -rf /system_root/system/priv-app/Fast
+rm /system_root/system/etc/permissions/privapp-permissions-com.samsung.android.fast.xml
 
 # Samsung Tips
 # Package Id: com.samsung.android.app.tips
@@ -557,6 +589,20 @@ rm -rf /data/misc/profiles/ref/com.samsung.android.visionarapps
 rm -rf /data/user_de/0/com.samsung.android.visionarapps
 rm -rf /system_root/system/app/VisionARApps1.3
 rm -rf /system_root/system/etc/permissions/privapp-permissions-com.samsung.android.visionarapps_v1.xml
+
+# Samsung Weather
+# Package Id: com.sec.android.daemonapp
+# App Name: Weather_SEP12.0
+find /data/app/ -iname *com.sec.android.daemonapp-* 2>/dev/null | xargs rm -rf
+find /data/dalvik-cache/ -iname *@Weather_SEP12.0@* 2>/dev/null | xargs rm -rf
+find /data/system/graphicsstats/ -iname *com.sec.android.daemonapp 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *Weather_SEP12.0-* 2>/dev/null | xargs rm -rf
+rm -rf /data/data/com.sec.android.daemonapp
+rm -rf /data/misc/profiles/ref/com.sec.android.daemonapp
+rm -rf /data/misc/profiles/cur/0/com.sec.android.daemonapp
+rm -rf /data/user_de/0/com.sec.android.daemonapp
+rm -rf /system_root/system/app/Weather_SEP12.0
+rm -rf /system_root/system/etc/permissions/privapp-permissions-com.sec.android.daemonapp.xml
 
 # SwiftKey
 # Package Id: com.touchtype.swiftkey
