@@ -5,7 +5,7 @@ mount -o rw,remount /product
 mount -o rw,remount /sdcard
 mount -o rw,remount /system_root
 
-# Android 11 Easter Egg
+# Android 12 Easter Egg
 # Package Id: com.android.egg
 # App Name: EasterEgg
 find /data/app/ -iname *com.android.egg-* 2>/dev/null | xargs rm -rf
@@ -38,6 +38,7 @@ find /data/app/ -iname *com.facebook.katana-* 2>/dev/null | xargs rm -rf
 find /data/dalvik-cache/ -iname *@Facebook_stub_preload@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.facebook.katana* 2>/dev/null | xargs rm -rf
 find /data/system/package_cache/ -iname *Facebook_stub_preload-* 2>/dev/null | xargs rm -rf
+rm -rf /data/app/Facebook_stub_preload
 rm -rf /data/data/com.facebook.katana
 rm -rf /data/misc/profiles/cur/0/com.facebook.katana
 rm -rf /data/misc/profiles/ref/com.facebook.katana
@@ -555,12 +556,14 @@ find /data/app/ -iname *com.samsung.android.app.tips-* 2>/dev/null | xargs rm -r
 find /data/dalvik-cache/ -iname *@Tips@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.samsung.android.app.tips 2>/dev/null | xargs rm -rf
 find /data/system/package_cache/ -iname *Tips-* 2>/dev/null | xargs rm -rf
+rm -rf /data/app/Tips
 rm -rf /data/data/com.samsung.android.app.tips
 rm -rf /data/misc/profiles/cur/0/com.samsung.android.app.tips
 rm -rf /data/misc/profiles/ref/com.samsung.android.app.tips
 rm -rf /data/system_ce/0/launch_params/com.samsung.android.app.tips_.TipsMainActivity.xml
 rm -rf /data/user_de/0/com.samsung.android.app.tips
 rm -rf /system_root/system/etc/permissions/privapp-permissions-com.samsung.android.app.tips.xml
+rm -rf /system_root/system/preload/Tips
 rm -rf /system_root/system/priv-app/Tips
 
 # Samsung TTS
