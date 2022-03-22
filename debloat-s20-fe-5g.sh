@@ -611,7 +611,7 @@ rm -rf /system_root/system/etc/permissions/privapp-permissions-com.sec.android.d
 # Package Id: com.touchtype.swiftkey
 # App Name: SwiftKey-market
 find /data/app/ -iname *com.touchtype.swiftkey-* 2>/dev/null | xargs rm -rf
-find /data/dalvik-cache/ -iname *@SwiftKey-market@* 2>/dev/null | xargs rm -rf
+find /data/dalvik-cache/ -iname *@SwiftKey-market*@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.touchtype.swiftkey 2>/dev/null | xargs rm -rf
 find /data/system/package_cache/ -iname *SwiftKey-market-* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.touchtype.swiftkey
@@ -619,24 +619,25 @@ rm -rf /data/media/0/Android/data/com.touchtype.swiftkey
 rm -rf /data/misc/profiles/cur/0/com.touchtype.swiftkey
 rm -rf /data/misc/profiles/ref/com.touchtype.swiftkey
 rm -rf /data/user_de/0/com.touchtype.swiftkey
-rm -rf /prism/app/SwiftKey-market-arm64-v8a
+rm -rf /prism/app/SwiftKey-market-arm64-v8a*
 rm -rf /sdcard/Android/data/com.touchtype.swiftkey
 
 # SwiftKey Factory Settings
 # Package Id: com.swiftkey.swiftkeyconfigurator
 # App Name: SwiftKeyFactorySettings
 find /data/app/ -iname *com.swiftkey.swiftkeyconfigurator-* 2>/dev/null | xargs rm -rf
-find /data/dalvik-cache/ -iname *@SwiftKeyFactorySettings@* 2>/dev/null | xargs rm -rf
+find /data/dalvik-cache/ -iname *@SwiftKeyFactorySettings*@* 2>/dev/null | xargs rm -rf
 find /data/system/graphicsstats/ -iname *com.swiftkey.swiftkeyconfigurator 2>/dev/null | xargs rm -rf
 find /data/system/package_cache/ -iname *SwiftKeyFactorySettings-* 2>/dev/null | xargs rm -rf
 rm -rf /data/data/com.swiftkey.swiftkeyconfigurator
 rm -rf /data/misc/profiles/cur/0/com.swiftkey.swiftkeyconfigurator
 rm -rf /data/misc/profiles/ref/com.swiftkey.swiftkeyconfigurator
 rm -rf /data/user_de/0/com.swiftkey.swiftkeyconfigurator
-rm -rf /prism/app/SwiftKeyFactorySettings
+rm -rf /prism/app/SwiftKeyFactorySettings*
 
 # SwiftKey miscellaneous
 rm -rf /data/data/com.samsung.android.honeyboard/app_SwiftKey
+rm -rf /data/user_de/0/com.samsung.android.honeyboard/app_SwiftKey
 rm -rf /prism/sipdb/SwiftKey
 
 # YouTube
