@@ -90,6 +90,28 @@ rm -rf /system_root/system/priv-app/FBServices
 rm -rf /system_root/system/etc/permissions/privapp-permissions-facebook.xml
 rm -rf /system_root/system/etc/sysconfig/facebook-hiddenapi-package-whitelist.xml
 
+# Google Assistent OK
+# Package Id: com.android.hotwordenrollment.okgoogle
+# App Name: Google Assistent
+find /data/dalvik-cache/ -iname *@HotwordEnrollmentOKGoogleEx3HEXAGON@* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *HotwordEnrollmentOKGoogleEx3HEXAGON-* 2>/dev/null | xargs rm -rf
+rm -rf /product/priv-app/HotwordEnrollmentOKGoogleEx3HEXAGON
+rm -rf /data/misc/profiles/cur/0/com.android.hotwordenrollment.okgoogle
+rm -rf /data/misc/profiles/ref/com.android.hotwordenrollment.okgoogle
+rm -rf /data/data/com.android.hotwordenrollment.okgoogle
+rm -rf /data/user_de/0/com.android.hotwordenrollment.okgoogle
+
+# Google Assistent X
+# Package Id: com.android.hotwordenrollment.xgoogle
+# App Name: Google Assistent
+find /data/dalvik-cache/ -iname *@HotwordEnrollmentXGoogleEx3HEXAGON@* 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *HotwordEnrollmentXGoogleEx3HEXAGON-* 2>/dev/null | xargs rm -rf
+rm -rf /product/priv-app/HotwordEnrollmentXGoogleEx3HEXAGON
+rm -rf /data/misc/profiles/cur/0/com.android.hotwordenrollment.xgoogle
+rm -rf /data/misc/profiles/ref/com.android.hotwordenrollment.xgoogle
+rm -rf /data/data/com.android.hotwordenrollment.xgoogle
+rm -rf /data/user_de/0/com.android.hotwordenrollment.xgoogle
+
 # Google Chrome
 # Package Id: com.android.chrome
 # App Name: Chrome
@@ -548,6 +570,13 @@ rm -rf /data/system_ce/0/shortcut_service/packages/com.samsung.android.fast.xml
 rm -rf /data/user_de/0/com.samsung.android.fast
 rm -rf /system_root/system/priv-app/Fast
 rm /system_root/system/etc/permissions/privapp-permissions-com.samsung.android.fast.xml
+
+# Samsung Smart Tutor
+# Package Id: com.rsupport.rs.activity.rsupport.aas2
+# App Name: Smart Tutor
+rm -rf /system_root/system/hidden/SmartTutor
+find /data/system/graphicsstats/ -iname *com.rsupport.rs.activity.rsupport.aas2 2>/dev/null | xargs rm -rf
+
 
 # Samsung Tips
 # Package Id: com.samsung.android.app.tips
