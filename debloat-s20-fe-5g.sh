@@ -728,6 +728,18 @@ rm -rf /data/user_de/0/com.samsung.android.app.social
 rm -rf /system_root/system/etc/permissions/privapp-permissions-com.samsung.android.samsungsocial.xml
 rm -rf /system_root/system/priv-app/SamsungSocial
 
+# User Manual
+# Package Id: com.sec.android.widgetapp.webmanual
+# App Name: WebManual
+find /data/dalvik-cache/ -iname *@WebManual@* 2>/dev/null | xargs rm -rf
+find /data/system/graphicsstats/ -iname *com.samsung.android.app.social 2>/dev/null | xargs rm -rf
+find /data/system/package_cache/ -iname *WebManual-* 2>/dev/null | xargs rm -rf
+rm -rf /data/data/com.sec.android.widgetapp.webmanual
+rm -rf /data/misc/profiles/cur/0/com.sec.android.widgetapp.webmanual
+rm -rf /data/misc/profiles/ref/com.sec.android.widgetapp.webmanual
+rm -rf /data/user_de/0/com.sec.android.widgetapp.webmanual
+rm -rf /system_root/system/app/WebManual
+
 # No idea what these all are, but seem unnecessary
 rm -rf /prism/app/MDIP-TIMO-2uk-DTDE-DTAT-VFAU-optus-3IT
 rm -rf /prism/app/idapk-1.0.0.43-92
