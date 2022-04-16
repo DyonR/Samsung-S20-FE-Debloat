@@ -8,7 +8,7 @@ I have **only** tested this on my own Samsung Galaxy S20 FE 5G (**SM-G781B**) wi
 ## Requirements  
 Samsung Galaxy S20 FE 5G _(Maybe other Galaxy S20 editions will work fine too)_  
 [Multidisabler enabled](https://forum.xda-developers.com/t/pie-10-11-system-as-root-multidisabler-disables-encryption-vaultkeeper-auto-flash-of-stock-recovery-proca-wsm-cass-etc.3919714/)  
-Android 11  
+Android 12  
 TWRP  
   
 ## How to run  
